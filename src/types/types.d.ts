@@ -7,3 +7,13 @@ declare interface LinkProps {
   children: ReactNode;
   target?: "_blank" | "_self" | "_parent" | "_top";
 }
+
+declare interface CardProps {
+  className?: string;
+  color: string;
+  href: string;
+  image: string;
+  title: string;
+  subject: string;
+  description: string;
+}

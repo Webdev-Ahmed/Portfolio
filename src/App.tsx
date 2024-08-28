@@ -7,12 +7,14 @@ const App = () => {
   return (
     <Router>
       <Nav />
-      <SmoothScroll>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/info" element={<Info />} />
-        </Routes>
-      </SmoothScroll>
+      <main className="w-full h-auto overflow-x-clip">
+        <SmoothScroll>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/info" element={<Info />} />
+          </Routes>
+        </SmoothScroll>
+      </main>
     </Router>
   );
 };

@@ -20,7 +20,7 @@ const Nav = () => {
         </div>
       ) : (
         <div className="shadow-2xl bg-neutral-400/15 size-12 flex items-center border-[1px] border-neutral-100/15 backdrop-blur-md justify-center rounded-full shadow-[#101010]">
-          <h1 className="text-xl font-semibold">ah.</h1>
+          <h1 className="text-xl font-serif">ah.</h1>
         </div>
       )}
       <nav className="flex shadow-xl shadow-black/30 768:fixed max-480:fixed max-480:left-1/2 max-480:-translate-x-1/2 p-1 gap-x-2 768:left-1/2 768:-translate-x-1/2 border-white/10 duration-300 border-[1px] bg-neutral-400/5 hover:bg-neutral-400/10 rounded-full backdrop-blur-md">
@@ -64,7 +64,7 @@ const Nav = () => {
             className={`fixed ${linkEnable ? "opacity-100 scale-100 visible" : "opacity-0 scale-0 invisible"} duration-300 origin-top-right right-7 top-24 rounded-2xl p-4 bg-neutral-400/15 border-[1px] border-neutral-100/15 backdrop-blur-md shadow-2xl shadow-[#101010]`}
           >
             <Link href="">Linkedin</Link>
-            <Link href="">Resume</Link>
+            <Link href="/src/public/Resume.pdf">Resume</Link>
           </div>
         </>
       )}

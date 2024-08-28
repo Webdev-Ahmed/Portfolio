@@ -11,6 +11,10 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .text-shadow {
   @apply [text-shadow:_0_0_20px_rgb(255_255_255_/_30%),_0_-2px_5px_var(--tw-shadow-color),_0_2px_5px_rgb(0_0_255_/_40%)];
 }

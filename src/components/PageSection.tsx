@@ -5,10 +5,10 @@ const PageSection = ({
   className,
 }: {
   children: ReactNode;
-  className: string;
+  className?: string;
 }) => {
   return (
-    <section className={`max-w-[1280px] relative mx-auto ${className}`}>
+    <section className={`max-w-[1280px] mx-auto ${className}`}>
       {children}
     </section>
   );
