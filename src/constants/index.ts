@@ -10,7 +10,7 @@ export const CompactProjects = [
     description: "Giving a beautifull yet seamless experiance.",
     href: "/cambridge-hospital",
     color: "#637E76",
-    imagePath: "/src/assets/images/Cambridge.png",
+    imagePath: "/images/Cambridge.png",
   },
   {
     title: "Svelte Markdown Blog",
@@ -18,7 +18,7 @@ export const CompactProjects = [
     description: "Envisioning an awesome blog website for the devs.",
     href: "/svelte-blog",
     color: "#ffc078",
-    imagePath: "/src/assets/images/Svelte-Blog.png",
+    imagePath: "/images/Svelte-Blog.png",
   },
   {
     title: "Brainwave",
@@ -26,6 +26,6 @@ export const CompactProjects = [
     description: "A beautifull and intuitive AI platform's frontend.",
     href: "/brainwave",
     color: "#4a1d7b",
-    imagePath: "/src/assets/images/Brainwave.png",
+    imagePath: "/images/Brainwave.png",
   },
 ];
