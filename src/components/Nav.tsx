@@ -4,6 +4,7 @@ import { isMobile } from "../lib/utils";
 import Link from "./Link";
 import { useLocation } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
+import { Link as RouteLink } from "react-router-dom";
 
 const Nav = () => {
   const location = useLocation();
@@ -26,9 +27,9 @@ const Nav = () => {
         {NavLinks.map((link, index) => {
           const isActive = location.pathname === link.href;
           return (
-            <a
+            <RouteLink
               key={index}
-              href={link.href}
+              to={link.href}
               className={`py-2 px-6 text-sm relative z-10 rounded-full duration-300 hover:bg-neutral-400/5 ${
                 isActive ? "bg-neutral-400/10" : "bg-transparent"
               }`}
@@ -39,7 +40,7 @@ const Nav = () => {
                 } h-[.12rem] w-5 rounded-full -translate-y-[100%] duration-300 bg-[#f2f2f2] left-1/2 -translate-x-1/2 -top-[0.3rem] rounded-bl-none rounded-br-none shadow-center shadow-white`}
               ></div>
               {link.title}
-            </a>
+            </RouteLink>
           );
         })}
       </nav>

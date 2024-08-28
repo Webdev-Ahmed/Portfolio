@@ -13,9 +13,9 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`w-[80%] h-[700px] ${className} mx-auto max-768:max-h-[600px] min-h-[370px] max-768:h-[80vw] max-990:w-[100%] max-990:h-[clamp(400px,70vw,625px)] max-1440:w-[850px] bg-neutral-800/70 border-[1px] p-2 border-neutral-100/10 backdrop-blur-3xl rounded-3xl overflow-hidden shadow-center-md shadow-neutral-950/75 bottom-0`}
+      className={`w-[80%] h-[700px] ${className} mx-auto max-768:max-h-[600px] min-h-[370px] max-768:h-[80vw] max-990:w-[100%] max-990:h-[clamp(400px,70vw,625px)] max-1440:w-[850px] bg-neutral-800/35 border-[1px] p-2 border-neutral-100/10 rounded-3xl overflow-hidden shadow-center-md shadow-neutral-950/75 bottom-0`}
     >
-      <div className="w-full h-full relative border p-[clamp(10px,5vw,2.5rem)] border-neutral-100/15 hover:border-neutral-100/50 transition-all duration-300 rounded-2xl bg-neutral-800/80 overflow-clip group">
+      <div className="w-full h-full relative border p-[clamp(10px,5vw,2.5rem)] border-neutral-100/15 hover:border-neutral-100/50 transition-color duration-300 rounded-2xl bg-neutral-800/80 overflow-clip group">
         <a href={href}>
           {/* <div
             style={{ backgroundColor: `${color}80` }}

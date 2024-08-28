@@ -20,7 +20,7 @@ const Home = () => {
 
         {isMobile({ width: "480px" }) ? (
           <div className="w-full h-full flex justify-center max-768:px-6 max-990:px-12 items-end">
-            <div className="w-[80%] h-[80%] max-768:h-[clamp(50%,_100vh,_80%)] max-990:w-[100%] max-990:h-[75%] max-1440:w-[850px] bg-neutral-800/70 border-[1px] p-2 pb-0 border-neutral-100/10 backdrop-blur-3xl rounded-3xl rounded-b-none shadow-center-md shadow-neutral-950/75 bottom-0">
+            <div className="w-[80%] h-[80%] max-768:h-[clamp(50%,_100vh,_80%)] max-990:w-[100%] max-990:h-[75%] max-1440:w-[850px] bg-neutral-800/35 border-[1px] p-2 pb-0 border-neutral-100/10 rounded-3xl rounded-b-none shadow-center-md shadow-neutral-950/75 bottom-0">
               <div className="w-full h-full relative border border-neutral-100/50 rounded-2xl bg-[#101010] overflow-hidden rounded-b-none">
                 <div className="absolute w-[70%] h-[450px] filter blur-[200px] -top-1/3 bg-white/20 left-1/2 -translate-x-1/2"></div>
 

@@ -7,8 +7,6 @@ const Home = lazy(() => import("./pages/Home"));
 const Info = lazy(() => import("./pages/Info"));
 
 const App = () => {
-  // prefetchDNS("https://example.com");
-
   return (
     <Router>
       <Nav />
