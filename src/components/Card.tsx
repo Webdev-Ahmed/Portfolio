@@ -17,9 +17,15 @@ const Card = ({
     >
       <div className="w-full h-full relative border p-[clamp(10px,5vw,2.5rem)] border-neutral-100/15 hover:border-neutral-100/50 transition-all duration-300 rounded-2xl bg-neutral-800/80 overflow-clip group">
         <a href={href}>
-          <div
+          {/* <div
             style={{ backgroundColor: `${color}80` }}
             className={`absolute w-[70%] h-[450px] max-768:w-[95%] max-480:w-[85%] max-768:h-[350px] max-480:h-[200px] filter blur-[100px] max-768:blur-[100px] max-480:blur-[30px] rounded-full max-768:opacity-65 -top-1/4 left-1/2 -translate-x-1/2 duration-300 opacity-0 group-hover:opacity-100`}
+          ></div> */}
+          <div
+            style={{
+              backgroundImage: `radial-gradient(ellipse at top, ${color}, transparent)`,
+            }}
+            className="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-70 max-768:opacity-70 duration-300 transition-opacity"
           ></div>
 
           <div className="flex justify-between relative z-10">
