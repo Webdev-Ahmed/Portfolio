@@ -18,8 +18,8 @@ const Card = ({
       <div className="w-full h-full relative border p-[clamp(10px,5vw,2.5rem)] border-neutral-100/15 hover:border-neutral-100/50 transition-all duration-300 rounded-2xl bg-neutral-800/80 overflow-hidden group">
         <a href={href}>
           <div
-            style={{ backgroundColor: `${color}BF` }}
-            className={`absolute w-[70%] h-[450px] filter blur-[200px] -top-1/4 left-1/2 -translate-x-1/2 duration-300 max-768:opacity-100 opacity-0 group-hover:opacity-100`}
+            style={{ backgroundColor: `${color}80` }}
+            className={`absolute w-[70%] h-[450px] filter blur-[100px] -top-1/4 left-1/2 -translate-x-1/2 duration-300 max-768:opacity-100 opacity-0 group-hover:opacity-100`}
           ></div>
 
           <div className="flex justify-between relative z-10">
@@ -29,7 +29,7 @@ const Card = ({
               </h1>
               <span className="mt-2 text-sm">
                 <div className="flex gap-[4px]">
-                  <p className="text-neutral-400">
+                  <p className="text-neutral-300">
                     <span className="font-semibold text-white">{subject}</span>{" "}
                     — {description}
                   </p>
