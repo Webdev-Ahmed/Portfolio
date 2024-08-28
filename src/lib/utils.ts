@@ -14,3 +14,5 @@ export const isMobile = ({
 export const cn = (...inputs: ClassValue[]) => {
   return twMerge(clsx(inputs));
 };
+
+export const FramerTransition = { duration: 0.5, ease: "backInOut" };

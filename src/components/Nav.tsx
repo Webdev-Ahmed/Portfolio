@@ -4,7 +4,6 @@ import { isMobile } from "../lib/utils";
 import Link from "./Link";
 import { useLocation } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
-import { Link as RouteLink } from "react-router-dom";
 
 const Nav = () => {
   const location = useLocation();
@@ -27,11 +26,11 @@ const Nav = () => {
         {NavLinks.map((link, index) => {
           const isActive = location.pathname === link.href;
           return (
-            <RouteLink
+            <a
               key={index}
-              to={link.href}
-              className={`py-2 px-6 text-sm relative z-10 rounded-full duration-300 hover:bg-neutral-400/5 ${
-                isActive ? "bg-neutral-400/10" : "bg-transparent"
+              href={link.href}
+              className={`py-2 px-6 text-sm relative z-10 rounded-full duration-300 hover:bg-neutral-400/15 ${
+                isActive ? "bg-neutral-400/20" : "bg-transparent"
               }`}
             >
               <div
@@ -40,14 +39,14 @@ const Nav = () => {
                 } h-[.12rem] w-5 rounded-full -translate-y-[100%] duration-300 bg-[#f2f2f2] left-1/2 -translate-x-1/2 -top-[0.3rem] rounded-bl-none rounded-br-none shadow-center shadow-white`}
               ></div>
               {link.title}
-            </RouteLink>
+            </a>
           );
         })}
       </nav>
       {isMobile({ width: "768px" }) ? (
         <div className="flex gap-x-4 shadow-center-lg bg-[#101010]/40 rounded-full shadow-[#101010]">
           <Link href="">Linkedin</Link>
-          <Link href="/src/public/Resume.pdf" target="_blank">
+          <Link href="/Resume.pdf" target="_blank">
             Resume
           </Link>
         </div>
@@ -55,7 +54,7 @@ const Nav = () => {
         <>
           <button
             onClick={() => setLinkEnable((prev) => !prev)}
-            className="size-12 rounded-full flex items-center text-center justify-center text-2xl bg-neutral-400/10 border-white/10 border-[1px]"
+            className="size-12 rounded-full flex items-center text-center justify-center text-2xl bg-neutral-400/10 border-white/10 border-[1px] backdrop-blur-md"
           >
             {linkEnable ? <IoClose /> : <span>@</span>}
           </button>
@@ -64,7 +63,9 @@ const Nav = () => {
             className={`fixed ${linkEnable ? "opacity-100 scale-100 visible" : "opacity-0 scale-0 invisible"} duration-300 origin-top-right right-7 top-24 rounded-2xl p-4 bg-neutral-400/15 border-[1px] border-neutral-100/15 backdrop-blur-md shadow-2xl shadow-[#101010]`}
           >
             <Link href="">Linkedin</Link>
-            <Link href="/src/public/Resume.pdf">Resume</Link>
+            <Link href="/Resume.pdf" target="_blank">
+              Resume
+            </Link>
           </div>
         </>
       )}

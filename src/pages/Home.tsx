@@ -1,12 +1,13 @@
 import { BiPlus } from "react-icons/bi";
 import BackgroundGradient from "../components/BackgroundGradient";
 import PageSection from "../components/PageSection";
-import { isMobile } from "../lib/utils";
+import { FramerTransition, isMobile } from "../lib/utils";
 import SectionTitle from "../components/SectionTitle";
 import Card from "../components/Card";
 import { FaArrowDown } from "react-icons/fa6";
 import { CompactProjects } from "../constants";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -19,7 +20,12 @@ const Home = () => {
         )}
 
         {isMobile({ width: "480px" }) ? (
-          <div className="w-full h-full flex justify-center max-768:px-6 max-990:px-12 items-end">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={FramerTransition}
+            className="w-full h-full flex justify-center max-768:px-6 max-990:px-12 items-end"
+          >
             <div className="w-[80%] h-[80%] max-768:h-[clamp(50%,_100vh,_80%)] max-990:w-[100%] max-990:h-[75%] max-1440:w-[850px] bg-neutral-800/35 border-[1px] p-2 pb-0 border-neutral-100/10 rounded-3xl rounded-b-none shadow-center-md shadow-neutral-950/75 bottom-0">
               <div className="w-full h-full relative border border-neutral-100/50 rounded-2xl bg-[#101010] overflow-hidden rounded-b-none">
                 <div className="absolute w-[70%] h-[450px] filter blur-[200px] -top-1/3 bg-white/20 left-1/2 -translate-x-1/2"></div>
@@ -55,54 +61,78 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ) : (
           <div className="w-full h-full px-6 flex flex-col justify-center">
-            <SectionTitle className="mb-7 mt-12">
-              <span className="font-semibold">Ahmed Raza</span>—Web Designer
-            </SectionTitle>
-            <div className="text-[clamp(10px,12.5vw,3.75rem)] leading-[clamp(10px,11vw,3.5rem)] [text-shadow:_0_0_20px_rgb(255_255_255_/_30%),_0_-3px_15px_var(--tw-shadow-color),_0_3px_10px_rgb(0_0_255_/_40%)] tracking-tighter shadow-orange-300/50 font-semibold text-[#f2f2f2]">
-              <h1>I craft websites,</h1>
-              <h1>
-                interactions &{" "}
-                <span className="font-serif [text-shadow:_0_0_10px_rgb(255_255_255_/_25%),_0_-2px_5px_var(--tw-shadow-color),_0_2px_5px_rgb(0_0_255_/_25%)] after:content-['design.'] after:font-serif after:absolute after:[text-shadow:_none] after:bg-gradient-to-b after:from-neutral-100 after:italic after:from-40% after:to-85% after:to-gray-400 after:bg-clip-text after:left-0 relative italic to-stone-400 text-transparent font-normal">
-                  design.
-                </span>
-              </h1>
-            </div>
-            <div className="relative text-[clamp(10px,5vw,1.5rem)] mt-[clamp(10px,9vw,3.5rem)] font-semibold">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={FramerTransition}
+            >
+              <SectionTitle className="mb-7 mt-12">
+                <span className="font-semibold">Ahmed Raza</span>—Web Designer
+              </SectionTitle>
+              <div className="text-[clamp(10px,12.5vw,3.75rem)] leading-[clamp(10px,11vw,3.5rem)] [text-shadow:_0_0_20px_rgb(255_255_255_/_30%),_0_-3px_15px_var(--tw-shadow-color),_0_3px_10px_rgb(0_0_255_/_40%)] tracking-tighter shadow-orange-300/50 font-semibold text-[#f2f2f2]">
+                <h1>I craft websites,</h1>
+                <h1>
+                  interactions &{" "}
+                  <span className="font-serif [text-shadow:_0_0_10px_rgb(255_255_255_/_25%),_0_-2px_5px_var(--tw-shadow-color),_0_2px_5px_rgb(0_0_255_/_25%)] after:content-['design.'] after:font-serif after:absolute after:[text-shadow:_none] after:bg-gradient-to-b after:from-neutral-100 after:italic after:from-40% after:to-85% after:to-gray-400 after:bg-clip-text after:left-0 relative italic to-stone-400 text-transparent font-normal">
+                    design.
+                  </span>
+                </h1>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...FramerTransition, delay: 0.15 }}
+              className="relative text-[clamp(10px,5vw,1.5rem)] mt-[clamp(10px,9vw,3.5rem)] font-semibold"
+            >
               <h1 className="w-auto">Studying at Aptech. Based in Karachi.</h1>
               <h1 className="w-auto text-neutral-500">
                 Certified in Graphics Design.
               </h1>
-            </div>
+            </motion.div>
           </div>
         )}
 
         <div className="absolute z-99 pointer-events-none bottom-0 w-screen h-[150px] bg-gradient-to-t translate-y-1/2 from-[#101010] from-60% to-transparent left-1/2 -translate-x-1/2">
           {!isMobile({ width: "480px" }) && (
-            <>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...FramerTransition, delay: 0.3 }}
+            >
               <div className="w-[90%] h-[1px] bg-white/10 mb-4 mx-auto"></div>
               <div className="px-7 flex gap-2 items-center">
                 <FaArrowDown className="animate-bounce" />
                 <p className="text-neutral-400">Selected Work:</p>
               </div>
-            </>
+            </motion.div>
           )}
         </div>
       </PageSection>
       <PageSection className="relative py-24 max-768:py-12 max-480:py-0 w-full h-auto max-990:px-12 max-768:px-6 max-480:px-4 flex flex-col gap-y-[clamp(30px,10vw,50px)]">
         {CompactProjects.map((project, index) => (
-          <Card
-            key={index}
-            title={project.title}
-            subject={project.subject}
-            description={project.description}
-            href={project.href}
-            color={project.color}
-            image={project.imagePath}
-            imageAlt={project.title}
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              ...FramerTransition,
+              delay: !isMobile({ width: "480px" }) ? 0.45 : 0.2,
+            }}
+          >
+            <Card
+              key={index}
+              title={project.title}
+              subject={project.subject}
+              description={project.description}
+              href={project.href}
+              color={project.color}
+              image={project.imagePath}
+              imageAlt={project.title}
+            />
+          </motion.div>
         ))}
       </PageSection>
       <Footer />

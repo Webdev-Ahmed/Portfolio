@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SmoothScroll from "./components/SmoothScroll";
 import { lazy, Suspense } from "react";
+import Loader from "./components/Loader";
 
 const Home = lazy(() => import("./pages/Home"));
 const Info = lazy(() => import("./pages/Info"));
@@ -16,7 +17,7 @@ const App = () => {
             <Route
               path="/"
               element={
-                <Suspense fallback={<p>Loading...</p>}>
+                <Suspense fallback={<Loader />}>
                   <Home />
                 </Suspense>
               }
@@ -24,7 +25,7 @@ const App = () => {
             <Route
               path="/info"
               element={
-                <Suspense fallback={<p>Loading...</p>}>
+                <Suspense fallback={<Loader />}>
                   <Info />
                 </Suspense>
               }

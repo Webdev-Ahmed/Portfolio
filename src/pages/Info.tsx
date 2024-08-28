@@ -1,20 +1,27 @@
 import BackgroundGradient from "../components/BackgroundGradient";
+import Footer from "../components/Footer";
 import FullImageCard from "../components/FullImageCard";
 import PageSection from "../components/PageSection";
 import SectionTitle from "../components/SectionTitle";
-import { isMobile } from "../lib/utils";
+import { FramerTransition, isMobile } from "../lib/utils";
+import { motion } from "framer-motion";
 
 const Info = () => {
   return (
     <>
-      <PageSection className="relative">
+      <PageSection className="relative h-fit">
         {isMobile({ width: "768px" }) ? (
           <BackgroundGradient className="bg-white/[0.075]" />
         ) : (
           <BackgroundGradient className="bg-white/[0.25]" />
         )}
 
-        <div className="pt-48 !max-w-[1024px] max-1440:!max-w-[880px] max-990:!max-w-[100vw] max-768:pt-36 max-990:px-12 max-768:px-6 max-480:px-4 mx-auto relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={FramerTransition}
+          className="pt-48 !max-w-[1024px] max-1440:!max-w-[880px] max-990:!max-w-[100vw] max-768:pt-36 max-990:px-12 max-768:px-6 max-480:px-4 h-full mx-auto relative z-10"
+        >
           <SectionTitle className="font-semibold tracking-tight text-xs mb-5">
             ABOUT ME
           </SectionTitle>
@@ -27,12 +34,17 @@ const Info = () => {
               </span>
             </h1>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="mt-20 flex gap-x-16 max-990:gap-x-6 max-768:gap-x-4 !max-w-[1024px] h-[100vh] max-1440:!max-w-[880px] max-990:!max-w-[100vw] max-990:px-12 max-768:px-6 max-480:px-4 mx-auto relative">
+        <div className="mt-20 768:flex gap-x-16 max-990:gap-x-6 max-768:gap-x-4 !max-w-[1024px] max-1440:!max-w-[880px] max-990:!max-w-[100vw] max-990:px-12 max-768:px-6 max-480:px-4 mx-auto relative">
           {isMobile({ width: "768px" }) ? (
             <>
-              <div className="w-[50%] h-full">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...FramerTransition, delay: 0.15 }}
+                className="w-[50%] h-full"
+              >
                 <FullImageCard
                   image="/images/Ahmed-Raza.jpg"
                   imageAlt="Ahmed Raza"
@@ -67,15 +79,25 @@ const Info = () => {
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>In my spare time,</h1>
                   <p className="text-base text-neutral-400">
-                    I'm probably making tweaks to my portfolio, gaming or
-                    solving Rubik's Cube.
+                    I'm probably making tweaks to my portfolio or working on
+                    some other projects.
+                  </p>
+                  <p className="text-base text-neutral-400">
+                    Other than that, you'll find me playing cricket and
+                    football, gaming, taking some pictures, and trying to get my
+                    hands on the latest tech.
                   </p>
                 </div>
                 <div className="px-6 py-14 pt-0 text-xl flex flex-col gap-y-7">
                   <h1 className="text-2xl">Thanks for stopping by!</h1>
                 </div>
-              </div>
-              <div className="w-[50%] h-full">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...FramerTransition, delay: 0.3 }}
+                className="w-[50%] h-full"
+              >
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>
                     This is my story — alongside some flicks that I took in my
@@ -86,7 +108,7 @@ const Info = () => {
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>And, I wanted to learn.</h1>
                   <p className="text-base text-neutral-400">
-                    I was greatly pleased with how I was able to get enter an
+                    I was greatly pleased with how I was able to enter an
                     institute for Graphics design.
                   </p>
                   <p className="text-base text-neutral-400">
@@ -94,13 +116,16 @@ const Info = () => {
                     positive impact on vastly more people.
                   </p>
                 </div>
-                <FullImageCard image="/images/Idk.jpg" imageAlt="Flower Bud" />
+                <FullImageCard
+                  image="/images/Flower-5.jpg"
+                  imageAlt="Flower Bud"
+                />
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>Making it all happen.</h1>
                   <p className="text-base text-neutral-400">
-                    To my advantage, I was able leverage a lot of the skills and
-                    design principles I had picked up during graphics design to
-                    greatly expedite my journey of self-learning Web Design.
+                    To my advantage, I was able to leverage a lot of the skills
+                    and design principles I had picked up during graphics design
+                    to greatly expedite my journey of self-learning Web Design.
                   </p>
                   <p className="text-base text-neutral-400">
                     I loved solving problems by making stuff, and really valued
@@ -108,10 +133,15 @@ const Info = () => {
                   </p>
                 </div>
                 <FullImageCard image="/images/Flower-4.jpg" imageAlt="Flower" />
-              </div>
+              </motion.div>
             </>
           ) : (
-            <div className="w-full h-full">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...FramerTransition, delay: 0.2 }}
+              className="w-full h-full"
+            >
               <FullImageCard
                 image="/images/Ahmed-Raza.jpg"
                 imageAlt="Ahmed Raza"
@@ -139,7 +169,7 @@ const Info = () => {
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>And, I wanted to learn.</h1>
                 <p className="text-base text-neutral-400">
-                  I was greatly pleased with how I was able to get enter an
+                  I was greatly pleased with how I was able to enter an
                   institute for Graphics design.
                 </p>
                 <p className="text-base text-neutral-400">
@@ -147,7 +177,7 @@ const Info = () => {
                   positive impact on vastly more people.
                 </p>
               </div>
-              <FullImageCard image="/images/Idk.jpg" imageAlt="Flower Bud" />
+              <FullImageCard image="/images/Flower-5.jpg" imageAlt="Flower" />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>This thing called Web design?</h1>
                 <p className="text-base text-neutral-400">
@@ -164,9 +194,9 @@ const Info = () => {
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>Making it all happen.</h1>
                 <p className="text-base text-neutral-400">
-                  To my advantage, I was able leverage a lot of the skills and
-                  design principles I had picked up during graphics design to
-                  greatly expedite my journey of self-learning Web Design.
+                  To my advantage, I was able to leverage a lot of the skills
+                  and design principles I had picked up during graphics design
+                  to greatly expedite my journey of self-learning Web Design.
                 </p>
                 <p className="text-base text-neutral-400">
                   I loved solving problems by making stuff, and really valued
@@ -177,8 +207,8 @@ const Info = () => {
               <div className="px-6 py-14 text-xl flex flex-col gap-y-6">
                 <h1>In my spare time,</h1>
                 <p className="text-base text-neutral-400">
-                  I'm probably making tweaks to my portfolio or chatting with my
-                  friends.
+                  I'm probably making tweaks to my portfolio or working on some
+                  other projects.
                 </p>
                 <p className="text-base text-neutral-400">
                   Other than that, you'll find me playing cricket and football,
@@ -189,10 +219,11 @@ const Info = () => {
               <div className="px-6 py-14 pt-0 text-xl flex flex-col gap-y-7">
                 <h1 className="text-2xl">Thanks for stopping by!</h1>
               </div>
-            </div>
+            </motion.div>
           )}
         </div>
       </PageSection>
+      <Footer />
     </>
   );
 };
