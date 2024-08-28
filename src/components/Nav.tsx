@@ -3,7 +3,6 @@ import { NavLinks } from "../constants";
 import { isMobile } from "../lib/utils";
 import Link from "./Link";
 import { useLocation } from "react-router-dom";
-import { CiAt } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 
 const Nav = () => {
