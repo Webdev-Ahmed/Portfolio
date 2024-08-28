@@ -16,6 +16,7 @@ const FullImageCard = ({
           src={image}
           className="w-full h-full object-cover object-center"
           alt={imageAlt}
+          loading="lazy"
         />
       </div>
     </div>

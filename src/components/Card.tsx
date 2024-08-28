@@ -42,7 +42,12 @@ const Card = ({
           </div>
 
           <div className="w-[85%] h-[clamp(200px,50vw,520px)] max-768:w-[90%] 768:translate-y-10 768:group-hover:translate-y-0 transition-transform duration-300 bottom-0 shadow-center-md shadow-neutral-950/50 absolute left-1/2 -translate-x-1/2 rounded-2xl rounded-b-none z-10 overflow-hidden ">
-            <img src={image} className="w-full h-full" alt={imageAlt} />
+            <img
+              src={image}
+              className="w-full h-full"
+              alt={imageAlt}
+              loading="lazy"
+            />
           </div>
         </a>
       </div>
