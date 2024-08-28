@@ -19,7 +19,7 @@ const Card = ({
         <a href={href}>
           <div
             style={{ backgroundColor: `${color}80` }}
-            className={`absolute w-[70%] h-[450px] filter blur-[100px] max-768:blur-[50px] max-768:opacity-75 -top-1/4 left-1/2 -translate-x-1/2 duration-300 opacity-0 group-hover:opacity-100`}
+            className={`absolute w-[70%] h-[450px] max-768:w-[95%] max-480:w-[85%] max-768:h-[350px] max-480:h-[230px] filter blur-[100px] max-768:blur-[100px] max-480:blur-[50px] rounded-full max-768:opacity-65 -top-1/4 left-1/2 -translate-x-1/2 duration-300 opacity-0 group-hover:opacity-100`}
           ></div>
 
           <div className="flex justify-between relative z-10">
