@@ -16,4 +16,5 @@ declare interface CardProps {
   title: string;
   subject: string;
   description: string;
+  imageAlt: string;
 }

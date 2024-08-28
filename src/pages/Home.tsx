@@ -101,6 +101,7 @@ const Home = () => {
             href={project.href}
             color={project.color}
             image={project.imagePath}
+            imageAlt={project.title}
           />
         ))}
       </PageSection>

@@ -33,7 +33,10 @@ const Info = () => {
           {isMobile({ width: "768px" }) ? (
             <>
               <div className="w-[50%] h-full">
-                <FullImageCard image="/images/Ahmed-Raza.jpg" />
+                <FullImageCard
+                  image="/images/Ahmed-Raza.jpg"
+                  imageAlt="Ahmed Raza"
+                />
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>My background</h1>
                   <p className="text-base text-neutral-400">
@@ -47,7 +50,7 @@ const Info = () => {
                     world of computers.
                   </p>
                 </div>
-                <FullImageCard image="/images/Flower-1.jpg" />
+                <FullImageCard image="/images/Flower-1.jpg" imageAlt="Flower" />
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>This thing called Web design?</h1>
                   <p className="text-base text-neutral-400">
@@ -60,7 +63,7 @@ const Info = () => {
                     successes, and the rest was history
                   </p>
                 </div>
-                <FullImageCard image="/images/Flower-2.jpg" />
+                <FullImageCard image="/images/Flower-2.jpg" imageAlt="Flower" />
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>In my spare time,</h1>
                   <p className="text-base text-neutral-400">
@@ -79,7 +82,7 @@ const Info = () => {
                     free time.
                   </h1>
                 </div>
-                <FullImageCard image="/images/Sky.jpg" />
+                <FullImageCard image="/images/Sky.jpg" imageAlt="Sky" />
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>And, I wanted to learn.</h1>
                   <p className="text-base text-neutral-400">
@@ -91,7 +94,7 @@ const Info = () => {
                     positive impact on vastly more people.
                   </p>
                 </div>
-                <FullImageCard image="/images/Idk.jpg" />
+                <FullImageCard image="/images/Idk.jpg" imageAlt="Flower Bud" />
                 <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                   <h1>Making it all happen.</h1>
                   <p className="text-base text-neutral-400">
@@ -104,19 +107,22 @@ const Info = () => {
                     paying meticulous attention to craftsmanship.
                   </p>
                 </div>
-                <FullImageCard image="/images/Flower-4.jpg" />
+                <FullImageCard image="/images/Flower-4.jpg" imageAlt="Flower" />
               </div>
             </>
           ) : (
             <div className="w-full h-full">
-              <FullImageCard image="/images/Ahmed-Raza.jpg" />
+              <FullImageCard
+                image="/images/Ahmed-Raza.jpg"
+                imageAlt="Ahmed Raza"
+              />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>
                   This is my story — alongside some flicks that I took in my
                   free time.
                 </h1>
               </div>
-              <FullImageCard image="/images/Sky.jpg" />
+              <FullImageCard image="/images/Sky.jpg" imageAlt="Sky" />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>My background</h1>
                 <p className="text-base text-neutral-400">
@@ -129,7 +135,7 @@ const Info = () => {
                   of computers.
                 </p>
               </div>
-              <FullImageCard image="/images/Flower-1.jpg" />
+              <FullImageCard image="/images/Flower-1.jpg" imageAlt="Flower" />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>And, I wanted to learn.</h1>
                 <p className="text-base text-neutral-400">
@@ -141,7 +147,7 @@ const Info = () => {
                   positive impact on vastly more people.
                 </p>
               </div>
-              <FullImageCard image="/images/Idk.jpg" />
+              <FullImageCard image="/images/Idk.jpg" imageAlt="Flower Bud" />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>This thing called Web design?</h1>
                 <p className="text-base text-neutral-400">
@@ -154,7 +160,7 @@ const Info = () => {
                   successes, and the rest was history
                 </p>
               </div>
-              <FullImageCard image="/images/Flower-2.jpg" />
+              <FullImageCard image="/images/Flower-2.jpg" imageAlt="Flower" />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
                 <h1>Making it all happen.</h1>
                 <p className="text-base text-neutral-400">
@@ -167,7 +173,7 @@ const Info = () => {
                   paying meticulous attention to craftsmanship.
                 </p>
               </div>
-              <FullImageCard image="/images/Flower-4.jpg" />
+              <FullImageCard image="/images/Flower-4.jpg" imageAlt="Flower" />
               <div className="px-6 py-14 text-xl flex flex-col gap-y-6">
                 <h1>In my spare time,</h1>
                 <p className="text-base text-neutral-400">

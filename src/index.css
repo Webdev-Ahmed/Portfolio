@@ -9,6 +9,7 @@
 *::after,
 *::before {
   font-family: "Nunito Sans", sans-serif;
+  @apply transform-gpu;
 }
 
 *::-webkit-scrollbar {

@@ -1,17 +1,36 @@
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Info } from "./pages";
 import SmoothScroll from "./components/SmoothScroll";
+import { lazy, Suspense } from "react";
+
+const Home = lazy(() => import("./pages/Home"));
+const Info = lazy(() => import("./pages/Info"));
 
 const App = () => {
+  // prefetchDNS("https://example.com");
+
   return (
     <Router>
       <Nav />
       <main className="w-full h-auto overflow-x-clip">
         <SmoothScroll>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/info" element={<Info />} />
+            <Route
+              path="/"
+              element={
+                <Suspense fallback={<p>Loading...</p>}>
+                  <Home />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/info"
+              element={
+                <Suspense fallback={<p>Loading...</p>}>
+                  <Info />
+                </Suspense>
+              }
+            />
           </Routes>
         </SmoothScroll>
       </main>
