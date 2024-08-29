@@ -7,6 +7,8 @@ import Nav from "./components/Nav";
 const Home = lazy(() => import("./pages/Home"));
 const Info = lazy(() => import("./pages/Info"));
 const Cambridge = lazy(() => import("./pages/Cambridge"));
+const SvelteBlog = lazy(() => import("./pages/SvelteBlog"));
+const Brainwave = lazy(() => import("./pages/Brainwave"));
 
 const App = () => {
   return (
@@ -36,6 +38,22 @@ const App = () => {
               element={
                 <Suspense fallback={<Loader />}>
                   <Cambridge />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/svelte-blog"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <SvelteBlog />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/brainwave"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Brainwave />
                 </Suspense>
               }
             />

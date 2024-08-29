@@ -6,17 +6,17 @@ import SectionTitle from "../components/SectionTitle";
 import { motion } from "framer-motion";
 import { FramerTransition } from "../lib/utils";
 
-const Cambridge = () => {
+const SvelteBlog = () => {
   return (
     <>
       <PageSection className="!max-w-full relative h-fit">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
+          animate={{ opacity: 0.5 }}
           transition={FramerTransition}
-          className="w-full h-screen absolute -z-[10] opacity-70 "
+          className="w-full h-screen absolute -z-[10] opacity-50"
           style={{
-            backgroundImage: `radial-gradient(ellipse at top, #637E76 15%, transparent 80%)`,
+            backgroundImage: `radial-gradient(ellipse at top, #ffc078 15%, transparent 80%)`,
           }}
         ></motion.div>
 
@@ -25,9 +25,9 @@ const Cambridge = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={FramerTransition}
-            className="bg-gradient-to-b max-768:text-6xl max-480:text-5xl tracking-tighter from-green-50 from-50% to-80% [text-shadow:_0_0_15px_rgb(255_255_255_/_0.3)] to-[#93baae] bg-clip-text text-transparent font-semibold text-7xl text-center"
+            className="bg-gradient-to-b max-768:text-6xl max-480:text-5xl tracking-tighter from-orange-50 from-50% to-80% [text-shadow:_0_0_15px_rgb(255_255_255_/_0.3)] to-[#e5c6a3] bg-clip-text text-transparent font-semibold text-7xl text-center"
           >
-            Cambridge Hospital
+            Svelte Markdown Blog
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -49,32 +49,32 @@ const Cambridge = () => {
             </h1>
             <div className="rounded-2xl overflow-hidden p-2 bg-neutral-800/50 border-[1px] border-neutral-100/10">
               <img
-                src="/images/Cambridge.png"
-                alt="Cambridge Hospital"
+                src="/images/Svelte-Blog-2.png"
+                alt="Svelte Blog"
                 loading="lazy"
                 className="border-white/50 rounded-xl aspect-[16/10] object-center object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden p-2 bg-neutral-800/50 border-[1px] border-neutral-100/10">
               <img
-                src="/images/Cambridge-2.png"
-                alt="Cambridge Hospital"
+                src="/images/Svelte-Blog.png"
+                alt="Svelte Blog"
                 loading="lazy"
                 className="border-white/50 rounded-xl aspect-[16/10] object-center object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden p-2 bg-neutral-800/50 border-[1px] border-neutral-100/10">
               <img
-                src="/images/Cambridge-4.png"
-                alt="Cambridge Hospital"
+                src="/images/Svelte-Blog-3.png"
+                alt="Svelte Blog"
                 loading="lazy"
                 className="border-white/50 rounded-xl aspect-[16/10] object-center object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden p-2 bg-neutral-800/50 border-[1px] border-neutral-100/10">
               <img
-                src="/images/Cambridge-3.png"
-                alt="Cambridge Hospital"
+                src="/images/Svelte-Blog-4.png"
+                alt="Svelte Blog"
                 loading="lazy"
                 className="border-white/50 rounded-xl aspect-[16/10] object-center object-cover"
               />
@@ -86,55 +86,43 @@ const Cambridge = () => {
             <div className="w-[50%] max-768:w-full">
               <h1 className="text-sm font-bold">My Role</h1>
               <p className="mt-6 text-neutral-400">
-                <span className="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_.5)]">
-                  UI/UX Lead
-                </span>{" "}
-                — Interaction Design, Visual Design, User Flows, Rapid
-                Prototyping
-              </p>
-
-              <h1 className="text-sm font-bold my-6">Team</h1>
-              <p className="text-neutral-400">
-                Ayesha Malick, Docs <br />
-                Arshad Hussain, Docs <br />
-                Adnan, Images <br />
+                It was a solo project so I was doing all the work.
               </p>
 
               <h1 className="text-sm font-bold py-6">Timeline & Status</h1>
               <p className="text-neutral-400">
-                30 Days,{" "}
+                3 Months,{" "}
                 <span className="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_.5)]">
-                  Launched in January 2024
+                  Launched in September 2023
                 </span>
               </p>
             </div>
             <div className="w-[50%] max-768:w-full">
               <h1 className="text-sm font-bold">Overview</h1>
               <p className="mt-6 text-neutral-400">
-                We were given this project as a final exam to a semester. We had
-                to make a beautifull yet intuitive website, there was no backend
-                to build because it was a first sem project, we decided to go
-                with the good ol'{" "}
+                I was chellenging my skills, seeing how much I have evovled, you
+                should be caught up with the technologies I used by the title,
+                but if you did'nt let me tell you, I used{" "}
                 <span className="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_.5)]">
-                  HTML
+                  Svelte
                 </span>
                 ,{" "}
                 <span className="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_.5)]">
-                  CSS
+                  Tailwind
                 </span>
-                , and{" "}
+                ,{" "}
                 <span className="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_.5)]">
-                  JS
-                </span>
-              </p>
-              <p className="text-neutral-400 mt-6">
-                I led the <span>UI/UX</span> direction of the site experience
-                for designing the website.
+                  React Query
+                </span>{" "}
+                and{" "}
+                <span className="text-white [text-shadow:_0_0_10px_rgb(255_255_255_/_.5)]">
+                  Axios
+                </span>{" "}
+                for this project.
               </p>
               <p className="mt-6 text-neutral-400">
-                The website was met with outstanding results and our team was
-                applauded for this amazing website, We got the highest result in
-                our batch.
+                This is basically a blog website where you can post your code or
+                your opinion on someone else's code!
               </p>
             </div>
           </div>
@@ -147,13 +135,13 @@ const Cambridge = () => {
             </h1>
             <Card
               className="w-full"
-              title="Svelte Markdown Blog"
+              title="Brainwave"
               subject="Personal Project, '23"
-              description="Envisioning an awesome blog website for devs."
-              href="/svelte-blog"
-              color="#ffc078"
-              imageAlt="Svelte-alt"
-              image="/images/Svelte-Blog.png"
+              description="A beautiful and intuitive AI platform."
+              href="/brainwave"
+              color="#4a1d7b"
+              imageAlt="Brainwave-alt"
+              image="/images/Brainwave.png"
             />
           </div>
         </div>
@@ -163,4 +151,4 @@ const Cambridge = () => {
   );
 };
 
-export default Cambridge;
+export default SvelteBlog;

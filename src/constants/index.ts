@@ -23,7 +23,7 @@ export const CompactProjects = [
   {
     title: "Brainwave",
     subject: "Personal's Project, '23",
-    description: "A beautifull and intuitive AI platform's frontend.",
+    description: "A beautiful and intuitive AI platform.",
     href: "/brainwave",
     color: "#4a1d7b",
     imagePath: "/images/Brainwave.png",
