@@ -30,7 +30,7 @@ const Footer = () => {
                   <Link
                     icon={false}
                     className="!p-0 !bg-transparent hover:!bg-transparent"
-                    href="/"
+                    href="/info"
                   >
                     Info
                   </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href=""
+                    href="https://www.linkedin.com/in/ahmed-raza-65b7b0274/"
                     className="!p-0 !bg-transparent hover:!bg-transparent"
                   >
                     Linkedin

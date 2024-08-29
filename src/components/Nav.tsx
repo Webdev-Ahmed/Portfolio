@@ -48,7 +48,9 @@ const Nav = () => {
       </nav>
       {isMobile({ width: "768px" }) ? (
         <div className="flex gap-x-4 shadow-center-lg bg-[#101010]/40 rounded-full shadow-[#101010]">
-          <Link href="">Linkedin</Link>
+          <Link href="https://www.linkedin.com/in/ahmed-raza-65b7b0274/">
+            Linkedin
+          </Link>
           <Link href="/Resume.pdf" target="_blank">
             Resume
           </Link>
@@ -65,7 +67,9 @@ const Nav = () => {
           <div
             className={`fixed ${linkEnable ? "opacity-100 scale-100 visible" : "opacity-0 scale-0 invisible"} duration-300 origin-top-right right-7 top-24 rounded-2xl p-4 bg-neutral-400/15 border-[1px] border-neutral-100/15 backdrop-blur-md shadow-2xl shadow-[#101010]`}
           >
-            <Link href="">Linkedin</Link>
+            <Link href="https://www.linkedin.com/in/ahmed-raza-65b7b0274/">
+              Linkedin
+            </Link>
             <Link href="/Resume.pdf" target="_blank">
               Resume
             </Link>
