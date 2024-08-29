@@ -3,8 +3,8 @@ import Link from "./Link";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-[400px] py-20 flex items-center justify-center border-t-[1px] border-white/10 mt-20">
-      <div className="max-w-[1024px] w-full h-full flex flex-col justify-between max-1024:px-4">
+    <footer className="w-full h-[400px] py-20 max-990:px-14 max-768:px-0 flex items-center justify-center border-t-[1px] border-white/10 mt-20">
+      <div className="max-w-[1024px] max-1440:max-w-[880px] w-full h-full flex flex-col justify-between max-768:px-7">
         <div className="w-full flex justify-between items-start text-start">
           {isMobile({ width: "480px" }) && (
             <h1 className="text-6xl font-serif">ah.</h1>

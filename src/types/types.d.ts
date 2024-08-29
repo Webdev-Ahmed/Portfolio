@@ -18,3 +18,10 @@ declare interface CardProps {
   description: string;
   imageAlt: string;
 }
+
+declare interface EducationCardProps {
+  location: string;
+  title: string;
+  date: string;
+  description: string;
+}

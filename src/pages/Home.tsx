@@ -115,6 +115,7 @@ const Home = () => {
       <PageSection className="relative py-24 max-768:py-12 max-480:py-0 w-full h-auto max-990:px-12 max-768:px-6 max-480:px-4 flex flex-col gap-y-[clamp(30px,10vw,50px)]">
         {CompactProjects.map((project, index) => (
           <motion.div
+            key={index}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -123,7 +124,6 @@ const Home = () => {
             }}
           >
             <Card
-              key={index}
               title={project.title}
               subject={project.subject}
               description={project.description}

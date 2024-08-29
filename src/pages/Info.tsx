@@ -1,15 +1,17 @@
 import BackgroundGradient from "../components/BackgroundGradient";
+import EducationCard from "../components/EducationCard";
 import Footer from "../components/Footer";
 import FullImageCard from "../components/FullImageCard";
 import PageSection from "../components/PageSection";
 import SectionTitle from "../components/SectionTitle";
+import { Education } from "../constants";
 import { FramerTransition, isMobile } from "../lib/utils";
 import { motion } from "framer-motion";
 
 const Info = () => {
   return (
     <>
-      <PageSection className="relative h-fit">
+      <PageSection className="relative">
         {isMobile({ width: "768px" }) ? (
           <BackgroundGradient className="bg-white/[0.075]" />
         ) : (
@@ -221,6 +223,27 @@ const Info = () => {
               </div>
             </motion.div>
           )}
+        </div>
+      </PageSection>
+      <PageSection className="relative">
+        <div className="!max-w-[1024px] max-1440:!max-w-[880px] max-990:!max-w-[100vw] px-4 max-990:px-14 max-768:px-7 max-480:px-4 mx-auto relative">
+          <div className="w-full h-[1px] mt-10 mb-20 bg-white/15"></div>
+
+          <SectionTitle className="uppercase font-bold mb-16">
+            Education
+          </SectionTitle>
+
+          <div className="w-full max-768:space-y-16">
+            {Education.map((item, index) => (
+              <EducationCard
+                key={index}
+                location={item.location}
+                title={item.title}
+                date={item.date}
+                description={item.description}
+              ></EducationCard>
+            ))}
+          </div>
         </div>
       </PageSection>
       <Footer />

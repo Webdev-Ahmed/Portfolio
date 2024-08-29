@@ -4,13 +4,16 @@ import { isMobile } from "../lib/utils";
 import Link from "./Link";
 import { useLocation } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const Nav = () => {
   const location = useLocation();
 
   const [linkEnable, setLinkEnable] = useState(false);
 
-  return (
+  const NavAllowed = location.pathname == "/" || location.pathname == "/info";
+
+  return NavAllowed ? (
     <header className="flex fixed px-14 max-768:px-7 max-480:px-3 w-full items-center z-[99] justify-between max-768:justify-end max-768:gap-2 py-6 max-480:justify-between">
       {isMobile({ width: "480px" }) ? (
         <div className="shadow-center-lg bg-[#101010]/40 rounded-full shadow-[#101010] max-768:fixed left-7">
@@ -69,6 +72,21 @@ const Nav = () => {
           </div>
         </>
       )}
+    </header>
+  ) : (
+    <header className="w-full fixed max-768:py-6 px-14 max-768:px-7 max-480:px-3 py-10 z-[990]">
+      <button className="shadow-center-md shadow-black/15 rounded-full">
+        <Link
+          className="!bg-white/10 !px-4 !pr-6 backdrop-blur-md group justify-center"
+          icon={false}
+          href="/"
+        >
+          <div className="flex items-center gap-x-2">
+            <FaArrowLeft className="group-hover:-translate-x-1 duration-300 transition-transform" />
+            Back
+          </div>
+        </Link>
+      </button>
     </header>
   );
 };
