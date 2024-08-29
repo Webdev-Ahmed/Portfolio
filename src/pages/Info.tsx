@@ -233,7 +233,7 @@ const Info = () => {
             Education
           </SectionTitle>
 
-          <div className="w-full max-768:space-y-16">
+          <div className="w-full space-y-16">
             {Education.map((item, index) => (
               <EducationCard
                 key={index}
