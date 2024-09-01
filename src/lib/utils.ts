@@ -11,8 +11,7 @@ export const isMobile = ({
   return useMediaQuery(`(min-width: ${width})`);
 };
 
-export const cn = (...inputs: ClassValue[]) => {
+export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
-};
-
+}
 export const FramerTransition = { duration: 0.5, ease: "backInOut" };

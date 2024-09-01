@@ -18,13 +18,15 @@ const Info = () => {
           <BackgroundGradient className="bg-white/[0.25]" />
         )}
 
+        <div className="absolute w-[100vw] h-full left-1/2 -translate-x-1/2 bg-grid-white/[0.035] pointer-events-none"></div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={FramerTransition}
           className="pt-48 !max-w-[1024px] max-1440:!max-w-[880px] max-990:!max-w-[100vw] max-768:pt-36 max-990:px-12 max-768:px-6 max-480:px-4 h-full mx-auto relative z-10"
         >
-          <SectionTitle className="font-semibold tracking-tight text-xs mb-5">
+          <SectionTitle className="mb-5 text-xs font-semibold tracking-tight">
             ABOUT ME
           </SectionTitle>
 
@@ -51,7 +53,7 @@ const Info = () => {
                   image="/images/Ahmed-Raza.jpg"
                   imageAlt="Ahmed Raza"
                 />
-                <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                   <h1>My background</h1>
                   <p className="text-base text-neutral-400">
                     I'm from Karachi, Pakistan, I'm currently in 10th standard
@@ -65,7 +67,7 @@ const Info = () => {
                   </p>
                 </div>
                 <FullImageCard image="/images/Flower-1.jpg" imageAlt="Flower" />
-                <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                   <h1>This thing called Web design?</h1>
                   <p className="text-base text-neutral-400">
                     When the pandemic struck, I took it as an opportunity to
@@ -78,7 +80,7 @@ const Info = () => {
                   </p>
                 </div>
                 <FullImageCard image="/images/Flower-2.jpg" imageAlt="Flower" />
-                <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                   <h1>In my spare time,</h1>
                   <p className="text-base text-neutral-400">
                     I'm probably making tweaks to my portfolio or working on
@@ -90,7 +92,7 @@ const Info = () => {
                     hands on the latest tech.
                   </p>
                 </div>
-                <div className="px-6 py-14 pt-0 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 pt-0 text-xl py-14 gap-y-7">
                   <h1 className="text-2xl">Thanks for stopping by!</h1>
                 </div>
               </motion.div>
@@ -100,14 +102,14 @@ const Info = () => {
                 transition={{ ...FramerTransition, delay: 0.3 }}
                 className="w-[50%] h-full"
               >
-                <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                   <h1>
                     This is my story — alongside some flicks that I took in my
                     free time.
                   </h1>
                 </div>
                 <FullImageCard image="/images/Sky.jpg" imageAlt="Sky" />
-                <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                   <h1>And, I wanted to learn.</h1>
                   <p className="text-base text-neutral-400">
                     I was greatly pleased with how I was able to enter an
@@ -122,7 +124,7 @@ const Info = () => {
                   image="/images/Flower-5.jpg"
                   imageAlt="Flower Bud"
                 />
-                <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+                <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                   <h1>Making it all happen.</h1>
                   <p className="text-base text-neutral-400">
                     To my advantage, I was able to leverage a lot of the skills
@@ -148,14 +150,14 @@ const Info = () => {
                 image="/images/Ahmed-Raza.jpg"
                 imageAlt="Ahmed Raza"
               />
-              <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+              <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                 <h1>
                   This is my story — alongside some flicks that I took in my
                   free time.
                 </h1>
               </div>
               <FullImageCard image="/images/Sky.jpg" imageAlt="Sky" />
-              <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+              <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                 <h1>My background</h1>
                 <p className="text-base text-neutral-400">
                   I'm from Karachi, Pakistan, I'm currently in 10th standard
@@ -168,7 +170,7 @@ const Info = () => {
                 </p>
               </div>
               <FullImageCard image="/images/Flower-1.jpg" imageAlt="Flower" />
-              <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+              <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                 <h1>And, I wanted to learn.</h1>
                 <p className="text-base text-neutral-400">
                   I was greatly pleased with how I was able to enter an
@@ -180,7 +182,7 @@ const Info = () => {
                 </p>
               </div>
               <FullImageCard image="/images/Flower-5.jpg" imageAlt="Flower" />
-              <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+              <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                 <h1>This thing called Web design?</h1>
                 <p className="text-base text-neutral-400">
                   When the pandemic struck, I took it as an opportunity to
@@ -193,7 +195,7 @@ const Info = () => {
                 </p>
               </div>
               <FullImageCard image="/images/Flower-2.jpg" imageAlt="Flower" />
-              <div className="px-6 py-14 text-xl flex flex-col gap-y-7">
+              <div className="flex flex-col px-6 text-xl py-14 gap-y-7">
                 <h1>Making it all happen.</h1>
                 <p className="text-base text-neutral-400">
                   To my advantage, I was able to leverage a lot of the skills
@@ -206,7 +208,7 @@ const Info = () => {
                 </p>
               </div>
               <FullImageCard image="/images/Flower-4.jpg" imageAlt="Flower" />
-              <div className="px-6 py-14 text-xl flex flex-col gap-y-6">
+              <div className="flex flex-col px-6 text-xl py-14 gap-y-6">
                 <h1>In my spare time,</h1>
                 <p className="text-base text-neutral-400">
                   I'm probably making tweaks to my portfolio or working on some
@@ -218,7 +220,7 @@ const Info = () => {
                   the latest tech.
                 </p>
               </div>
-              <div className="px-6 py-14 pt-0 text-xl flex flex-col gap-y-7">
+              <div className="flex flex-col px-6 pt-0 pb-20 text-xl py-14 gap-y-7">
                 <h1 className="text-2xl">Thanks for stopping by!</h1>
               </div>
             </motion.div>
@@ -227,9 +229,9 @@ const Info = () => {
       </PageSection>
       <PageSection className="relative">
         <div className="!max-w-[1024px] max-1440:!max-w-[880px] max-990:!max-w-[100vw] px-4 max-990:px-14 max-768:px-7 max-480:px-4 mx-auto relative">
-          <div className="w-full h-[1px] mt-10 mb-20 bg-white/15"></div>
+          <div className="w-full h-[1px] mb-20 bg-white/15"></div>
 
-          <SectionTitle className="uppercase font-bold mb-16">
+          <SectionTitle className="mb-16 font-bold uppercase">
             Education
           </SectionTitle>
 
