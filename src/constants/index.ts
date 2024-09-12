@@ -36,7 +36,7 @@ export const Education = [
     title: "Software Engineering, ADSE",
     date: "08/'23 - Present",
     description:
-      "ADSE — Advance Diploma in Software Engineering. Learing all about software engineering. Currently in the 3nd semester.",
+      "ADSE — Advance Diploma in Software Engineering. Learing all about software engineering. Currently in the 3rd semester.",
   },
   {
     location: "The Educators",
