@@ -44,9 +44,9 @@ const Home = () => {
                 </div>
 
                 <div className="text-8xl ml-20 mt-24 leading-[5.5rem] max-768:ml-[clamp(20px,5vw,50px)] max-768:mt-[clamp(20px,10vw,65px)] max-990:text-[8vw] max-990:leading-[6.5vw] max-990:ml-10 max-990:mt-14 max-1440:text-7xl max-1440:ml-14 max-1440:mt-20 max-1440:leading-[4rem] text-shadow tracking-tighter shadow-orange-300/50 font-semibold text-[#f2f2f2]">
-                  <h1>I craft websites,</h1>
+                  <h1>Hello, I'm Ahmed Raza.</h1>
                   <h1>
-                    interactions &{" "}
+                    A web dev &{" "}
                     <span className="font-serif [text-shadow:_0_0_20px_rgb(255_255_255_/_30%)] italic bg-gradient-to-b from-neutral-300 from-40% to-85% to-neutral-800 font-normal text-transparent bg-clip-text">
                       design.
                     </span>
