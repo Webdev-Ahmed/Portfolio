@@ -44,11 +44,11 @@ const Home = () => {
                 </div>
 
                 <div className="text-8xl ml-20 mt-24 leading-[5.5rem] max-768:ml-[clamp(20px,5vw,50px)] max-768:mt-[clamp(20px,10vw,65px)] max-990:text-[8vw] max-990:leading-[6.5vw] max-990:ml-10 max-990:mt-14 max-1440:text-7xl max-1440:ml-14 max-1440:mt-20 max-1440:leading-[4rem] text-shadow tracking-tighter shadow-orange-300/50 font-semibold text-[#f2f2f2]">
-                  <h1>Hello, I'm Ahmed Raza.</h1>
+                  <h1>I'm Ahmed Raza,</h1>
                   <h1>
-                    A web dev &{" "}
+                    web dev &{" "}
                     <span className="font-serif [text-shadow:_0_0_20px_rgb(255_255_255_/_30%)] italic bg-gradient-to-b from-neutral-300 from-40% to-85% to-neutral-800 font-normal text-transparent bg-clip-text">
-                      design.
+                      designer.
                     </span>
                   </h1>
                 </div>
@@ -75,11 +75,11 @@ const Home = () => {
                 <span className="font-semibold">Ahmed Raza</span>—Web Designer
               </SectionTitle>
               <div className="text-[clamp(10px,12.5vw,3.75rem)] leading-[clamp(10px,11vw,3.5rem)] [text-shadow:_0_0_20px_rgb(255_255_255_/_30%),_0_-3px_15px_var(--tw-shadow-color),_0_3px_10px_rgb(0_0_255_/_40%)] tracking-tighter shadow-orange-300/50 font-semibold text-[#f2f2f2]">
-                <h1>I craft websites,</h1>
+                <h1>I'm Ahmed Raza,</h1>
                 <h1>
-                  interactions &{" "}
-                  <span className="font-serif [text-shadow:_0_0_10px_rgb(255_255_255_/_25%),_0_-2px_5px_var(--tw-shadow-color),_0_2px_5px_rgb(0_0_255_/_25%)] after:content-['design.'] after:font-serif after:absolute after:[text-shadow:_none] after:bg-gradient-to-b after:from-neutral-100 after:italic after:from-40% after:to-85% after:to-gray-400 after:bg-clip-text after:left-0 relative italic to-stone-400 text-transparent font-normal">
-                    design.
+                  a web dev &{" "}
+                  <span className="font-serif [text-shadow:_0_0_10px_rgb(255_255_255_/_25%),_0_-2px_5px_var(--tw-shadow-color),_0_2px_5px_rgb(0_0_255_/_25%)] after:content-['designer.'] after:font-serif after:absolute after:[text-shadow:_none] after:bg-gradient-to-b after:from-neutral-100 after:italic after:from-40% after:to-85% after:to-gray-400 after:bg-clip-text after:left-0 relative italic to-stone-400 text-transparent font-normal">
+                    designer.
                   </span>
                 </h1>
               </div>
